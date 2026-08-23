@@ -87,7 +87,7 @@ Power BI Dashboard
 
 ---
 
-##  Dataset
+##  *Dataset*
 
 The project uses a synthetic last-mile delivery dataset containing:
 
