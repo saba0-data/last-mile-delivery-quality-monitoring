@@ -1,227 +1,85 @@
-# Last-Mile Delivery Quality & Exception Analytics
+# 🚚 Last-Mile Delivery Quality & Exception Analytics
 
-## Overview
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![SQL](https://img.shields.io/badge/SQL-SQLite-orange)
+![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-blue)
+![GitHub](https://img.shields.io/badge/GitHub-Version%20Control-black)
 
-A data quality and operational analytics project simulating a
-last-mile delivery quality monitoring workflow.
+A data quality and operational analytics project that simulates a
+last-mile delivery monitoring workflow using **Python, SQL, SQLite and Power BI**.
 
-The project audits delivery records, identifies operational
-exceptions, assigns severity levels, recommends corrective actions,
-and analyzes quality patterns using Python and SQL.
+The project audits delivery records, detects operational exceptions,
+classifies their severity, recommends corrective actions, performs SQL-based
+analysis, and presents key findings through an interactive Power BI dashboard.
 
 ---
 
-## Business Problem
+## 📊 Dashboard Preview
 
-Last-mile delivery operations generate large volumes of
-transactional and operational data.
+![Last-Mile Delivery Quality Dashboard](screenshots/dashboard.png)
 
-Quality teams need to identify:
+### Dashboard KPIs
 
-- Address and geocode issues
+| KPI | Result |
+|---|---:|
+| Total Deliveries | **10,100** |
+| Total Exceptions | **2,304** |
+| Exception Rate | **22.81%** |
+| SLA Compliance | **95.00%** |
+
+---
+
+## 🎯 Business Problem
+
+Last-mile delivery operations generate large volumes of transactional and
+operational data.
+
+Operations and quality teams need to identify:
+
+- Address and geocoding problems
 - SLA breaches
 - Excessive delivery attempts
 - Route anomalies
 - Customer experience issues
+- High-priority operational exceptions
+- City-level quality differences
 - Recurring operational patterns
-- High-priority exceptions requiring escalation
 
-This project simulates such a quality-monitoring workflow.
-
----
-
-## Project Objectives
-
-- Perform systematic quality audits
-- Identify data-quality and operational exceptions
-- Classify exceptions by type
-- Assign severity levels
-- Recommend corrective actions
-- Analyze city-level performance
-- Analyze driver-level performance
-- Measure SLA compliance
-- Identify recurring exception patterns
-- Prioritize issues for escalation
+This project simulates a data-driven quality monitoring workflow to identify
+these issues and prioritize corrective action.
 
 ---
 
-## Dataset
+## 🛠️ Tools & Technologies
 
-The project uses a synthetic dataset containing:
-
-- 10,100 delivery records
-- 14 original attributes
-- Delivery information
-- Driver information
-- Geographic information
-- SLA information
-- Customer ratings
-- Address quality
-- Route status
-
-Additional analytical fields are generated during the
-quality-audit process.
+- **Python**
+- **Pandas**
+- **NumPy**
+- **SQL**
+- **SQLite**
+- **Power BI**
+- **Git & GitHub**
 
 ---
 
-## Quality Audit Rules
+## 🔄 Project Workflow
 
-The audit evaluates:
-
-1. Duplicate orders
-2. Invalid latitude
-3. Invalid longitude
-4. Missing addresses
-5. SLA breaches
-6. Excessive delivery attempts
-7. Low customer ratings
-8. Route anomalies
-
----
-
-## Exception Classification
-
-Detected issues are classified into:
-
-- Geocode Issue
-- Address Issue
-- SLA Breach
-- Driver/Attempt Issue
-- Route Issue
-- Customer Experience Issue
-
----
-
-## Severity Classification
-
-| Severity | Description |
-|---|---|
-| Critical | Immediate operational/data-quality attention |
-| High | Requires timely investigation or escalation |
-| Medium | Requires operational review |
-| None | No exception detected |
-
----
-
-## Key Results
-
-### Overall Quality
-
-- Records audited: 10,100
-- Total exceptions: 2,304
-- Exception rate: 22.81%
-
-### SLA Performance
-
-- SLA compliance: 95%
-- SLA breaches: 505
-
-### Exception Patterns
-
-| Exception Type | Count | Share |
-|---|---:|---:|
-| Geocode Issue | 599 | 26.00% |
-| Address Issue | 473 | 20.53% |
-| SLA Breach | 462 | 20.05% |
-| Driver/Attempt Issue | 268 | 11.63% |
-| Route Issue | 258 | 11.20% |
-| Customer Experience Issue | 244 | 10.59% |
-
-### Priority Analysis
-
-| Severity | Exceptions | Share |
-|---|---:|---:|
-| Critical | 599 | 26.00% |
-| High | 1,179 | 51.17% |
-| Medium | 526 | 22.83% |
-
-77.17% of identified exceptions were classified as
-Critical or High priority.
-
----
-
-## City-Level Analysis
-
-The SQL analysis compares cities based on:
-
-- Total deliveries
-- Total exceptions
-- Exception rate
-
-Mumbai recorded the highest exception rate at 23.60%,
-while Hyderabad recorded the lowest at 21.69%.
-
-The relatively narrow difference suggests that quality
-issues are distributed across the network rather than
-being concentrated in a single city.
-
----
-
-## Tools & Technologies
-
-- Python
-- Pandas
-- NumPy
-- SQL
-- SQLite
-- Power BI
-- Git
-- GitHub
-
----
-
-## Project Workflow
-
+```text
 Raw Delivery Data
-
-↓
-
-Quality Audit
-
-↓
-
+        ↓
+Data Quality Audit
+        ↓
 Exception Detection
-
-↓
-
-Severity Classification
-
-↓
-
+        ↓
+Exception Classification
+        ↓
+Severity Assignment
+        ↓
 Recommended Action
-
-↓
-
+        ↓
 SQLite Database
-
-↓
-
+        ↓
 SQL Analysis
-
-↓
-
+        ↓
 Power BI Dashboard
-
----
-
-## Business Impact
-
-The analysis identifies address and geocode quality as a
-major operational improvement opportunity.
-
-Geocode and address issues together represented 46.53%
-of classified exceptions.
-
-Improving location and address data quality could therefore
-help reduce a significant portion of operational exceptions.
-
----
-
-## Future Improvements
-
-- Power BI operational dashboard
-- Automated exception monitoring
-- Trend analysis over time
-- Root-cause analysis
-- Automated escalation workflows
-- Real-time operational monitoring
