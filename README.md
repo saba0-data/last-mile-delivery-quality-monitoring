@@ -1,4 +1,4 @@
-# 🚚 Last-Mile Delivery Quality & Exception Analytics
+#  Last-Mile Delivery Quality & Exception Analytics
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![SQL](https://img.shields.io/badge/SQL-SQLite-orange)
@@ -15,7 +15,7 @@ analysis, and presents key findings through an interactive Power BI dashboard.
 
 ---
 
-## 📊 Dashboard Preview
+##  Dashboard Preview
 
 ![Last-Mile Delivery Quality Dashboard](screenshots/dashboard.png)
 
@@ -30,7 +30,7 @@ analysis, and presents key findings through an interactive Power BI dashboard.
 
 ---
 
-## 🎯 Business Problem
+##  Business Problem
 
 Last-mile delivery operations generate large volumes of transactional and
 operational data.
@@ -51,7 +51,7 @@ these issues and prioritize corrective action.
 
 ---
 
-## 🛠️ Tools & Technologies
+##  Tools & Technologies
 
 - **Python**
 - **Pandas**
@@ -63,7 +63,7 @@ these issues and prioritize corrective action.
 
 ---
 
-## 🔄 Project Workflow
+##  Project Workflow
 
 ```text
 Raw Delivery Data
