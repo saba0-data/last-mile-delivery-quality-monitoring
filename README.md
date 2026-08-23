@@ -486,6 +486,26 @@ Potential extensions to the project include:
 - Predictive SLA breach detection
 - Automated Power BI refresh
 
+## Power BI Dashboard
+
+An interactive Power BI dashboard was developed to monitor:
+
+- Overall delivery volume
+- Total exceptions
+- Exception rate
+- SLA compliance
+- Exception types
+- Exception rate by city
+- SLA performance
+- Exception severity distribution
+
+Dashboard file:
+
+`dashboard/Last_Mile_Delivery_Quality_Analytics.pbix`
+
+Dashboard preview:
+
+![Power BI Dashboard](screenshots/dashboard.png)
 ---
 
 ##  Author
