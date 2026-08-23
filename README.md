@@ -83,3 +83,22 @@ SQLite Database
 SQL Analysis
         ↓
 Power BI Dashboard
+
+
+---
+
+##  Dataset
+
+The project uses a synthetic last-mile delivery dataset containing:
+
+10,100 delivery records
+14 original attributes
+Driver information
+Delivery information
+Geographic information
+SLA information
+Customer ratings
+Address quality
+Route status
+
+Additional analytical fields are generated during the quality-audit process.
